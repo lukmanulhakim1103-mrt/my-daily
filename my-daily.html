@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My daily at home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background: black;
+            padding: 50px 40px;
+            color: white;
+        }
+
+        .navbar nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: all 1s ease;
+        }
+
+        .navbar nav a:hover{
+            color: rgb(85, 190, 224);
+        }
+
+        .banner{
+            background-image: url(my-home.png);
+            width: 100%;
+            padding: 250px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+         .banner h1{
+            color: white;
+            margin-bottom: 70px;
+        }
+
+        .banner a{
+            padding: 14px 34px;
+            background: black;
+            padding: 20px 60px;
+            color:white;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 10px 30px white;
+            transition: 1s;
+        }
+
+        .banner a:hover{
+            color: black;
+            background: white;
+            box-shadow: 0 10px 30px black;
+        }
+
+        .container-card{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+        }
+
+        .card{
+            background: black;
+            padding: 1px;
+            border-radius: 50px;
+            box-shadow: 0 20px 30px black;
+            margin-left: 50px;
+            margin-bottom: 60px;
+            transition: all 1s ease;
+        }
+
+        .card:hover{
+            transform: translateY(-15px);
+        }
+
+        .card img{
+            width: 100%;
+            height: 250px;
+            margin-bottom: 30px;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+
+        .card h1{
+            text-align: center;
+            color: white;
+        }
+
+        .card h3{
+            text-align: center;
+            color: white;
+        }
+
+        .medul{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .medul h2{
+            margin-bottom: 30px;
+        }
+
+        .sosmed{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            margin-top:30px;
+        }
+        .sosmed a{
+            width:56px;
+            height:56px;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:24px;color:white;
+            text-decoration:none;
+            box-shadow:0 10px 24px black;
+            transition:all 1s ease;
+        }
+
+        .sosmed a:hover{
+            transform:translateY(-6px)
+        }
+
+        .wa{
+            background:#22c55e;
+            color:#020617;
+        }
+        .ig{
+            background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
+        }
+
+        .tt{
+            background:#000000;
+        }
+
+        .fb{
+            background:#1877F2;
+        }
+
+        .gh{
+            background:#111827;
+        }
+
+        footer{
+            background: black;
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="navbar">
+        <div class="navdul">
+            <h2>
+                <i class="fa-solid fa-house"></i> My Daily At Home
+            </h2>
+        </div>
+        <nav>
+            <a href="#home"><i class="fa-regular fa-house"></i> Home</a>
+            <a href="#daily"><i class="fa-solid fa-paste"></i> daily</a>
+            <a href="#medsos"><i class="fa-solid fa-hashtag"></i> Medsos</a>
+        </nav>
+    </section>
+
+    <header class="banner">
+        <h1>"Berikut adalah aktivitas saya selama liburan selama 1 bulan"</h1>
+        <a href="#daily">Klik</a>
+    </header>
+
+    <div class="container-card">
+        <div class="card">
+            <img src="orang-bangun.jpg" alt="">
+            <h1>Bangun Tidur</h1>
+            <h3>Jam 03.30 WIb</h3>
+        </div>
+        <div class="card">
+            <img src="main-hsr.jpg" alt="">
+            <h1>Main Honkai Starrail</h1>
+            <h3>Jam 03.30-04.20 WIb</h3>
+        </div>
+        <div class="card">
+            <img src="Keutamaan-Sholat-Subuh.png" alt="">
+            <h1>Salat Subbuh</h1>
+            <h3>Jam 04.20 WIb</h3>
+        </div>
+        <div class="card">
+            <img src="orang-bangun.jpg" alt="">
+            <h1>Tidur Lagi</h1>
+            <h3>Jam 05.00 WIb</h3>
+        </div>
+        <div class="card">
+            <img src="masih-tidur.jpg" alt="">
+            <h1>Masih tidur</h1>
+            <h3>Tunggu di Rosting emak</h3>
+        </div>
+        <div class="card">
+            <img src="bangun.jpg" alt="">
+            <h1>Kedengaran emak rosting , "bujang tidur kebluk bae"</h1>
+            <h3>Langsung abangun tapi gatau jam</h3>
+        </div>
+        <div class="card">
+            <img src="mandi.jpg" alt="">
+            <h1>Langsung Mandi</h1>
+            <h3>Jam 12.30 WIb</h3>
+        </div>
+        <div class="card">
+            <img src="salat.jpg" alt="">
+            <h1>Salat Dzuhur</h1>
+            <h3>Jam 13.00 WIb</h3>
+        </div>
+        <div class="card">
+            <img src="makan.jpg" alt="">
+            <h1>Makan</h1>
+            <h3>Jam 14.00 WIB</h3>
+        </div>
+
+        <div class="card">
+            <img src="bantu.jpg" alt="">
+            <h1>Bantu ortu</h1>
+            <h3>Kadang ampe maghrib tapi tetep salat ashar ya !</h3>
+        </div>
+        
+        <div class="card">
+            <img src="salat.jpg" alt="">
+            <h1>salat maghrib dan isya</h1>
+            <h3>Yang nunggu salat isya itu saya ngaji dulu</h3>
+        </div>
+
+        <div class="card">
+            <img src="genshin.jpg" alt="">
+            <h1>Main Genshin</h1>
+            <h3>jam 20.00-23.00 WIB</h3>
+        </div>
+
+        <div class="card">
+            <img src="masih-tidur.jpg" alt="">
+            <h1>Tidur</h1>
+            <h3>jam 23.00 wib-03.00 WIB</h3>
+        </div>
+    </div>
+
+     <div class="medul">
+        <h2>Jangan Lupa follow Akun Medsos Kami Dan Hubungi Kami Jika Pengen Template Webnya</h2>
+        <h3>Terimakasih</h3>
+    </div>
+
+    <div class="sosmed" id="medsos">
+        <a href="https://wa.me/6282120810067" target="_blank" class="wa"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/bennet_natlan29?igsh=MmFmMHY5bWdrZG5y" target="_blank" class="ig"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@chibi_bennet.genshin?_r=1&_t=ZS-92xBarYWWAe" target="_blank" class="tt"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/share/17vWoGA7tm/" target="_blank" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://github.com/lukmanulhakim1103-mrt" target="_blank" class="gh"><i class="fa-brands fa-github"></i></a>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 My daily  | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
